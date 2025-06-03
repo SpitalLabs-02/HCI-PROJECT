@@ -11,8 +11,8 @@ function Header() {
 
   const navLinkClass = ({ isActive }) =>
     isActive
-      ? "text-black font-normal text-base"
-      : "text-black text-base font-normal ";
+      ? "text-[#357ABB] font-normal text-base"
+      : "text-black text-base font-normal hover:text-[#357ABB]";
   return (
     <nav className="bg-[#F1F7FC] absolute lg:relative z-20 lg:z-0 w-full">
       <div className=" mx-auto px-4 lg:px-10 xl:px-18 py-4 flex items-center justify-between font-sans">
@@ -63,7 +63,7 @@ function Header() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden px-4 pb-4 flex flex-col gap-8 mt-5">
+        <div className="lg:hidden px-4 pb-4 flex flex-col gap-8 mt-5 shadow-md">
           <NavLink to="/" className={navLinkClass} onClick={toggleMenu} end>
             Home
           </NavLink>
