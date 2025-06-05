@@ -11,7 +11,7 @@ function Footer() {
     
     <>
     <footer className=' bg-[#B3D3F0] p-4 sm:p-8 '>
-        <div className="bg-[#F1F7FC] flex gap-6 flex-col rounded-[20px] md:pt-28 lg:flex-row md:pb-52 md:px-32 pt-4 pb-4 px-4 xl:justify-between">
+        <div className="bg-[#F1F7FC] container mx-auto flex gap-6 flex-col rounded-[20px] md:pt-28 lg:flex-row md:pb-52 md:px-32 pt-4 pb-4 px-4 xl:justify-between">
 
         <div className='flex flex-col justify-center items-center xl:items-start gap-8 xl:w-[402px]'>
             <span className='flex items-center'>
