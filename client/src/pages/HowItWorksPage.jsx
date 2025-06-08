@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../components/howItWorks/Hero'
 import YourJourney from '../components/howItWorks/YourJourney'
 import PerfectCareSolution from '../components/homepage/PerfectCareSolution'
+import ComprehensieCareServices from '../components/howItWorks/ComprehensieCareServices'
 
 function HowItWorksPage() {
   return (
