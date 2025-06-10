@@ -32,6 +32,8 @@ function Testimonial() {
       <section className="bg-[#265782] p-6 md:py-8 md:px-20 md:mb-8">
         
           <Headings
+          h1color={"text-white"}
+          pcolor={"text-white"}
             header={"What Our Clients Say"}
             paragraph={`Hear from families who have experienced the difference our care services make in their loved ones' lives.`}
           />
