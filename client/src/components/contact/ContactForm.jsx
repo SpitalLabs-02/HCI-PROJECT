@@ -87,7 +87,7 @@ const ContactForm = () => {
         </p>
         <button
           type="submit"
-          className="py-3 px-6 rounded-full bg-[#357ABB] text-base w-full hover:bg-blue-700 text-center font-normal text-white "
+          className="py-3 px-6 rounded-full bg-[#357ABB] text-base w-full hover:bg-blue-700 text-center font-normal text-white cursor-pointer"
         >
           Send Message
         </button>

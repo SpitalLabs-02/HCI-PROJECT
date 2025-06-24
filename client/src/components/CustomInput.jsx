@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { LuEye, LuEyeClosed } from "react-icons/lu";
 
 const CustomInput = ({
   label,
@@ -7,14 +8,26 @@ const CustomInput = ({
   value,
   onChange,
   placeholder,
-  icon, // React node for icon, optional
-  options, // for dropdown select (array of {value, label})
+  icon, 
+  options, 
   textarea = false,
+  togglePassword = false,
 }) => {
+  const [showPassword, setShowPassword] = useState(false);
+
+  const isPasswordType = type === "password" && togglePassword;
+  const inputType = isPasswordType
+    ? showPassword
+      ? "text"
+      : "password"
+    : type;
   return (
     <div className="mb-6 w-full">
       {label && (
-        <label htmlFor={name} className="block mb-1 font-regular text-black text-base">
+        <label
+          htmlFor={name}
+          className="block mb-1 font-regular text-black text-base"
+        >
           {label}
         </label>
       )}
@@ -50,7 +63,7 @@ const CustomInput = ({
           <input
             id={name}
             name={name}
-            type={type}
+            type={inputType}
             value={value}
             onChange={onChange}
             placeholder={placeholder}
@@ -58,8 +71,18 @@ const CustomInput = ({
           />
         )}
 
-        {/* Icon container */}
-        {icon && (
+        {/* Toggle password visibility */}
+        {isPasswordType && (
+          <div
+            onClick={() => setShowPassword((prev) => !prev)}
+            className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#6F6F6F] cursor-pointer"
+          >
+            {showPassword ? <LuEye /> : <LuEyeClosed />}
+          </div>
+        )}
+
+        {/* For icon */}
+        {!isPasswordType && icon && (
           <div className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#6F6F6F] pointer-events-none">
             {icon}
           </div>

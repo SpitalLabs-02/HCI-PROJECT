@@ -8,6 +8,11 @@ import Home from "./pages/Home.jsx";
 import HowItWorksPage from "./pages/HowItWorksPage.jsx";
 import Services from "./pages/Services.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
+import Login from "./pages/auth/Login.jsx";
+import SignUp from "./pages/auth/SignUp.jsx";
+import CareGiver from "./pages/auth/signup/CareGiver.jsx";
+import AuthLayout from "./Layouts/AuthLayout.jsx";
+import CareRecipientSignUp from "./pages/auth/CareRecipientSignUp.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -17,8 +22,13 @@ createRoot(document.getElementById("root")).render(
         <Route path="/how-it-works" element={<HowItWorksPage />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/login" />
-        <Route path="/singup" />
+      </Route>
+
+      <Route element={<AuthLayout />}>
+        <Route path="/login" element={<Login />} />
+        <Route path="/singup" element={<SignUp />} />
+        <Route path="/care-recipient-singup" element={<CareRecipientSignUp />} />
+        <Route path="/caregiver" element={<CareGiver />} />
       </Route>
     </Routes>
   </BrowserRouter>

@@ -45,7 +45,7 @@ function Header() {
               Sign In
             </Link>
             <Link
-              to="/register"
+              to="/singup"
               className="py-3 px-6 rounded-full bg-[#357ABB] text-base w-[122px] text-center font-normal text-white"
             >
               Sign Up
