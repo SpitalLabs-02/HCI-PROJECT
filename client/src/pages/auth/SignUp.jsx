@@ -28,7 +28,7 @@ const Signup = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 sm:w-[520px] mx-auto">
+    <div className="mt-10 sm:mt-0 flex flex-col items-center justify-center px-4 pb-8 sm:w-[520px] mx-auto">
       <h2 className="text-[28px] font-semibold text-gray-900">Sign Up</h2>
       <p className="text-base text-[#667185] font-normal text-center sm:w-[400px] mx-auto">
         Select a role to access tailored features that suit your needs

@@ -28,7 +28,7 @@ const CareRecipientSignUp = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 sm:w-[578px] mx-auto">
+    <div className="mt-10 sm:mt-0 flex flex-col items-center justify-center px-4 pb-8 sm:w-[578px] mx-auto">
       <h2 className="text-[28px] font-semibold text-gray-900 text-center">
         Sign Up as a Care Recipient
       </h2>
