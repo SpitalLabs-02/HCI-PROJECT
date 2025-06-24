@@ -92,7 +92,7 @@ const MedicalInfo = ({ next, back }) => {
           onClick={next}
           className="py-3 px-6 rounded-full bg-[#357ABB] text-base w-full hover:bg-blue-700 text-center font-normal text-white  cursor-pointer"
         >
-          Confirm & Continue
+          Submit
         </button>
 
         <button

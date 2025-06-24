@@ -14,7 +14,7 @@ const Login = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   return (
-    <div className="flex flex-col items-center justify-center px-4  sm:w-[400px] mx-auto mt-10">
+    <div className="flex flex-col items-center justify-center px-4  sm:w-[400px] mx-auto mt-10 sm:mt-4">
       <h2 className="text-[28px] font-semibold text-gray-900">Log In</h2>
       <p className="text-base text-[#667185] font-normal text-center sm:w-[400px] mx-auto">
         Enter your credentials to access your account
@@ -45,7 +45,7 @@ const Login = () => {
         </p>
 
         <button className="py-3 px-6 rounded-full bg-[#357ABB] text-base  w-full hover:bg-blue-700 text-center font-normal text-white mt-10 sm:mt-20 cursor-pointer">
-          Proceed to Sign Up
+         Login
         </button>
 
         <p className="text-base text-black font-normal text-center mt-5">

@@ -12,6 +12,7 @@ const CustomInput = ({
   options, 
   textarea = false,
   togglePassword = false,
+  date = false
 }) => {
   const [showPassword, setShowPassword] = useState(false);
 
@@ -59,6 +60,16 @@ const CustomInput = ({
               </option>
             ))}
           </select>
+        ) : date ? (
+          <input
+            id={name}
+            name={name}
+            type={inputType}
+            value={value}
+            onChange={onChange}
+            placeholder={placeholder}
+            className="w-full pr-10 px-3 py-2 border border-[#DEDEDE] rounded-md focus:outline-none focus:ring-2 "
+          />
         ) : (
           <input
             id={name}
