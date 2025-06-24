@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PersonalInfo from "../../../components/auth/signup/caregiver/PersonalInfo";
-import OTPVerification from "../../../components/auth/signup/caregiver/OTPVerification";
+import OTPVerification from "../../../components/auth/signup/OTPVerification";
 import ConfirmInfo from "../../../components/auth/signup/caregiver/ConfirmInfo";
 import ProfessionalBg from "../../../components/auth/signup/caregiver/ProfessionalBg";
 import GuarantorDetails from "../../../components/auth/signup/caregiver/GuarantorDetails";

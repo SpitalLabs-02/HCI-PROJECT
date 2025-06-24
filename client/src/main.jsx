@@ -13,6 +13,8 @@ import SignUp from "./pages/auth/SignUp.jsx";
 import CareGiver from "./pages/auth/signup/CareGiver.jsx";
 import AuthLayout from "./Layouts/AuthLayout.jsx";
 import CareRecipientSignUp from "./pages/auth/CareRecipientSignUp.jsx";
+import CareRecipient from "./pages/auth/signup/CareRecipient.jsx";
+import CareRepresentative from "./pages/auth/signup/CareRepresentative.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -27,8 +29,10 @@ createRoot(document.getElementById("root")).render(
       <Route element={<AuthLayout />}>
         <Route path="/login" element={<Login />} />
         <Route path="/singup" element={<SignUp />} />
-        <Route path="/care-recipient-singup" element={<CareRecipientSignUp />} />
         <Route path="/caregiver" element={<CareGiver />} />
+        <Route path="/care-recipient-singup" element={<CareRecipientSignUp />} />
+        <Route path="/care-recipient" element={<CareRecipient />} />
+        <Route path="/care-representative" element={<CareRepresentative />} />
       </Route>
     </Routes>
   </BrowserRouter>

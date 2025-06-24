@@ -14,7 +14,7 @@ const Login = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4  sm:w-[400px] mx-auto">
+    <div className="flex flex-col items-center justify-center px-4  sm:w-[400px] mx-auto mt-10">
       <h2 className="text-[28px] font-semibold text-gray-900">Log In</h2>
       <p className="text-base text-[#667185] font-normal text-center sm:w-[400px] mx-auto">
         Enter your credentials to access your account
