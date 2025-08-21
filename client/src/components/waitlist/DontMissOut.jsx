@@ -3,34 +3,28 @@ import { Link } from "react-router-dom";
 import PCSImage from "../../assets/pcs-img.svg";
 import { FiArrowRight } from "react-icons/fi";
 
-const PerfectCareSolution = () => {
+const DontMissOut = () => {
   return (
     <div className="px-4 lg:px-10 xl:px-18 py-10 lg:pb-20">
       <div className="bg-[#265782] rounded-2xl flex items-center flex-wrap justify-between p-5 lg:p-14">
         <div className="sm:w-[481px] mx-auto"> 
           <h1 className="text-white font-normal text-2xl sm:text-3xl lg:text-[40px]">
-            Ready to Find the Perfect Care Solution?
+            Don’t Miss Out on HummingBirds Care
           </h1>
           <p className="text-base sm:text-xl text-white font-normal mt-3">
-            Whether you're seeking care for a loved one or offering your
-            caregiving services, we're here to help you every step of the way.
+           Secure your spot today and be among the first to access our compassionate care services.
           </p>
 
           <div className="flex flex-col lg:flex-row items-center gap-3 mt-4">
             <Link
-              to="/register"
-              className="py-3 px-6 rounded-full bg-[#357ABB] text-base w-full lg:w-[207px] text-center font-normal text-white flex items-center justify-center gap-3"
+              to="/waitlist-form"
+              className="py-3 px-6 rounded-full bg-[#357ABB] text-base w-full lg:w-[209px] text-center font-normal text-white flex items-center justify-center gap-3"
             >
-              Find a Caregiver
+              Join the Waitlist
               <FiArrowRight />
             </Link>
 
-            <Link
-              to="/login"
-              className="py-3 px-4 rounded-full border border-[#C0D6EA] text-base w-full lg:w-[210px] text-center font-normal text-[#C0D6EA]"
-            >
-              Become a Caregiver
-            </Link>
+           
           </div>
         </div>
         {/* Right side */}
@@ -40,4 +34,4 @@ const PerfectCareSolution = () => {
   );
 };
 
-export default PerfectCareSolution;
+export default DontMissOut;

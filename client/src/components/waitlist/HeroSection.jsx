@@ -1,44 +1,56 @@
 import React from "react";
-import HeroImage from "../../assets/hero-img.svg";
+import WaitListHeroImg from "../../assets/waitlist-img.svg";
 import { Link } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
 import HeroAvatar from "../../assets/hero-avatar.png";
+import logo from "../../assets/logo.svg";
 
 const HeroSection = () => {
   const avatarData = [HeroAvatar, HeroAvatar, HeroAvatar];
   return (
-    <div className="px-4 lg:px-10 xl:px-18 py-4 bg-[#F1F7FC] pt-24 lg:pt-5">
-      <div className="flex items-start justify-between flex-wrap lg:flex-nowrap">
-        {/* Left Side */}
-        <div className="lg:w-[600px]  lg:pt-18">
-          <p className="text-xs text-[#357ABB] text-center font-normal rounded-lg border border-[#357ABB] px-2 w-[200px] py-2 ">
-            Trusted Elderly Care Services
-          </p>
+    <div className="px-4 lg:px-10 xl:px-18 py-4 bg-[#F1F7FC] pt-5">
+      <div className="flex items-center justify-between ">
+        <Link to={"/"}>
+          <img src={logo} className="w-32 lg:w-auto" />
+        </Link>
 
-          <h1 className="text-black font-semibold text-2xl sm:text-5xl  mt-5 lg:tracking-wider xl:leading-14">
-            Compassionate Care for your Loved Ones
+        <Link
+          to="/waitlist-form"
+          className="p-2 sm:py-3 sm:px-4 rounded-full bg-[#357ABB] text-xs sm:text-base w-[120px] sm:w-[202px] text-center font-normal text-white flex items-center justify-center gap-3"
+        >
+          Join the Waitlist
+        </Link>
+      </div>
+      <div className="flex items-start justify-between flex-wrap lg:flex-nowrap mt-5 sm:mt-14 ">
+        {/* Left Side */}
+        <div className="lg:w-[540px]  lg:pt-18">
+          {/* <p className="text-xs text-[#357ABB] text-center font-normal rounded-lg border border-[#357ABB] px-2 w-[200px] py-2 ">
+            Trusted Elderly Care Services
+          </p> */}
+
+          <h1 className="text-black font-semibold text-2xl sm:text-3xl  mt-5 lg:tracking-wider xl:leading-14">
+            Be the First to Access Compassionate Care for Your Loved Ones
           </h1>
           <p className="text-base text-[#434343] font-normal mt-3">
-            Connecting qualified caregivers with seniors who need assistance.
-            Our platform makes it easy to find the right care for your specific
-            needs.
+            Join our exclusive waitlist and get early access to trusted
+            caregivers, personalized matching, and quality elderly care
+            services.
           </p>
 
           {/* Hero buttons */}
           <div className="flex flex-col lg:flex-row items-center gap-3 mt-4">
             <Link
-              to="/register"
-              className="py-3 px-6 rounded-full bg-[#357ABB] text-base w-full lg:w-[227px] text-center font-normal text-white flex items-center justify-center gap-3"
+               to="/waitlist-form"
+              className="py-3 px-4 rounded-full bg-[#357ABB] text-base w-full lg:w-[202px] text-center font-normal text-white flex items-center justify-center gap-3"
             >
-              Find Care Services
-              <FiArrowRight />
+              Join the Waitlist
             </Link>
 
             <Link
               to="/login"
               className="py-3 px-4 rounded-full border border-[#357ABB] text-base w-full lg:w-[156px] text-center font-normal text-[#357ABB]"
             >
-              How it Works
+              Learn More
             </Link>
           </div>
           {/* Trusted by */}
@@ -63,11 +75,17 @@ const HeroSection = () => {
               Trusted by 2,000+ families nationwide
             </p>
           </div>
-        </div> 
+        </div>
 
         {/* Right side */}
-          <img src={HeroImage} width={695} className="mt-5 lg:mt-0 mx-auto lg:-ml-5 xl:-ml-0 lg:w-[620px] xl:w-[695px]" />
-      
+       
+       <img
+          src={WaitListHeroImg}
+          width={695}
+          className="mt-5 lg:mt-0 mx-auto lg:mx-0  lg:w-[500px] xl:w-[670px]"
+        />
+     
+       
       </div>
     </div>
   );

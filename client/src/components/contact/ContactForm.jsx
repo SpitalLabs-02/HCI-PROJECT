@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaChevronDown, FaCommentDots } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 import CustomInput from "../CustomInput";
 import PhoneIcon from "../../assets/pn-icon.svg";
 import FullNameIcon from "../../assets/fn-icon.svg";

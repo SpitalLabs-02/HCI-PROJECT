@@ -15,6 +15,8 @@ import AuthLayout from "./Layouts/AuthLayout.jsx";
 import CareRecipientSignUp from "./pages/auth/CareRecipientSignUp.jsx";
 import CareRecipient from "./pages/auth/signup/CareRecipient.jsx";
 import CareRepresentative from "./pages/auth/signup/CareRepresentative.jsx";
+import WaitList from "./pages/WaitList.jsx";
+import WaitListForm from "./pages/WaitListForm.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -26,11 +28,17 @@ createRoot(document.getElementById("root")).render(
         <Route path="/services" element={<Services />} />
       </Route>
 
+      <Route path="/waitlist" element={<WaitList />} />
+      <Route path="/waitlist-form" element={<WaitListForm />} />
+
       <Route element={<AuthLayout />}>
         <Route path="/login" element={<Login />} />
         <Route path="/singup" element={<SignUp />} />
         <Route path="/caregiver" element={<CareGiver />} />
-        <Route path="/care-recipient-singup" element={<CareRecipientSignUp />} />
+        <Route
+          path="/care-recipient-singup"
+          element={<CareRecipientSignUp />}
+        />
         <Route path="/care-recipient" element={<CareRecipient />} />
         <Route path="/care-representative" element={<CareRepresentative />} />
       </Route>
